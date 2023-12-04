@@ -21,7 +21,7 @@
                     <button @click="addTodo">Add</button>
                 </div>
                 <!-- object list -->
-                <ul>
+                <ul id="items-list">
                     <li v-for="(item, index) in toDos" :key="index">
                         <input type="checkbox" v-model="item.done">
                         <span :class="{ 'done': item.done }" v-html="item.done ? `<s>${item.text}</s>` : item.text"></span>

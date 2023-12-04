@@ -54,3 +54,9 @@ button:hover{
     background:linear-gradient(180deg,#ff7363, rgb(95, 23, 23));
     font-weight: bold;
 }
+#items-list{
+    list-style: none;
+}
+#items-list span{
+    margin-left: 1rem;
+}
