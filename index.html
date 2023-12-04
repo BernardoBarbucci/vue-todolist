@@ -15,10 +15,10 @@
     <div id="app">
         <main class="container">
             <section class="todo-app">
-                <h2>To-do List</h2>
+                <h1>To-do List</h1>
                 <div class="row">
-                    <input type="text" id="input-box" placeholder="Add your reminder">
-                    <button>Add</button>
+                    <input v-model="newReminder" type="text" id="input-box" placeholder="Add your reminder">
+                    <button @click="addTodo">Add</button>
                 </div>
             </section>
         </main>
