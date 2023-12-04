@@ -31,6 +31,7 @@ const app = createApp({
                     done: false
                 });
                 this.newReminder = '';
+                console.log('newReminder');
             }
         }
     }

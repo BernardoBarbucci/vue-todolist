@@ -25,6 +25,7 @@
                     <li v-for="(item, index) in toDos" :key="index">
                         <input type="checkbox" v-model="item.done">
                         <span :class="{ 'done': item.done }" v-html="item.done ? `<s>${item.text}</s>` : item.text"></span>
+                        <span @click="removeItem(index)" class="remove">X</span>
                     </li>
                 </ul>
             </section>
