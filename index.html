@@ -23,8 +23,9 @@
                 <!-- object list -->
                 <ul>
                     <li v-for="(item, index) in ToDoList" :key="index">
-                        {{ item.message }}
-                    </li>
+                        <input type="checkbox" v-model="todo.green">
+                        <span :class="{ 'done': todo.green }">{{ item.text }}</span>
+                    </li> 
                 </ul>
             </section>
         </main>

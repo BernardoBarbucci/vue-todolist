@@ -24,8 +24,8 @@ const app = createApp({
         };
     },
     methods: {
-        showMessage() {
-            alert(this.message);
+        addTodo() {
+            if(this.)
         }
     }
 });
