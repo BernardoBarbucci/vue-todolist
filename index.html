@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue ToDoList</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- vue app -->
     <div id="app">
-        <h1>{{ message }}</h1>
-        <button @click="showMessage">Click me</button>
+        <main class="container">
+            <section class="todo-app">
+                <h2>To-do List</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your reminder">
+                    <button>Add</button>
+                </div>
+            </section>
+        </main>
     </div>
     <!-- js + vue link -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
