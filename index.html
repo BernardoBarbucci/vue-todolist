@@ -22,9 +22,9 @@
                 </div>
                 <!-- object list -->
                 <ul>
-                    <li v-for="(item, index) in ToDoList" :key="index">
-                        <input type="checkbox" v-model="todo.green">
-                        <span :class="{ 'done': todo.green }">{{ item.text }}</span>
+                    <li v-for="(item, index) in toDos" :key="index">
+                        <input type="checkbox" v-model="item.done">
+                        <span :class="{ 'done': item.done }">{{ item.text }}</span>
                     </li> 
                 </ul>
             </section>

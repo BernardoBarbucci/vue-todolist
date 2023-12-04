@@ -25,7 +25,14 @@ const app = createApp({
     },
     methods: {
         addTodo() {
-            if(this.)
+            if (this.newReminder.trim() !== '') {
+                // trim fa sì che non vengano aggiunti todos vuoti
+                this.toDos.push({
+                    text: this.newReminder,
+                    done: false
+                });
+                this.newReminder = '';
+            }
         }
     }
 });
