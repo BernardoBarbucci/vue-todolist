@@ -20,6 +20,12 @@
                     <input v-model="newReminder" type="text" id="input-box" placeholder="Add your reminder">
                     <button @click="addTodo">Add</button>
                 </div>
+                <!-- object list -->
+                <ul>
+                    <li v-for="(item, index) in ToDoList" :key="index">
+                        {{ item.message }}
+                    </li>
+                </ul>
             </section>
         </main>
     </div>
