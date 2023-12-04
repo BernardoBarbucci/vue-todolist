@@ -33,6 +33,10 @@ const app = createApp({
                 this.newReminder = '';
                 console.log('newReminder');
             }
+        },
+        removeItem(index) {
+            this.toDos.splice(index, 1);
+            console.log('item is removed from the list');
         }
     }
 });
